@@ -104,9 +104,9 @@
         userinput.addEventListener("input", show_results, true);
         userinput.addEventListener("keyup", accept_autocomplete, true);
         suggestions.addEventListener("click", accept_suggestion, true);
-        optioninput.addEventListener("change", function(){ init(JSON.parse('`'+ this.value.trim() +'`'), data) }, true);
+        optioninput.addEventListener("change", function(){ init(JSON.parse(`this.value.trim()`), data) }, true);
         
-        init(JSON.parse('`'+ optioninput.value.trim() +'`'), data);
+        init(JSON.parse(`optioninput.value.trim()`), data);
 
         function show_results(){
 
