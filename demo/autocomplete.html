@@ -82,6 +82,8 @@
         var index;
         
         function init(options, data){
+            if(index)
+                index.destroy();
             index = new FlexSearch(options);
 
             for(var i = 0; i < data.length; i++){
