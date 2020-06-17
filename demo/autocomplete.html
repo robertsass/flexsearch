@@ -64,21 +64,14 @@
     </style>
 </head>
 <body>
-<table>
+<table width="100%">
     <tr>
         <td style="position: relative">
             <input type="text" id="autocomplete">
             <input type="text" id="userinput" placeholder="Search by movie title ...">
         </td>
         <td style="text-align: right;">
-            <textarea id="optioninput" rows="10" cols="20" placeholder="Options">
-{
-    encode: "advanced",
-    tokenize: "reverse",
-    suggest: true,
-    cache: true
-}
-            </textarea>
+            <textarea id="optioninput" rows="2" cols="40" placeholder="Options">{"encode":"advanced", "tokenize":"reverse", "suggest":true,"cache":true}</textarea>
         </td>
     </tr>
 </table>
